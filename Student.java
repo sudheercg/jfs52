@@ -23,13 +23,41 @@ class Student{
        studentRef.age=20;
        studentRef.course="Java";
 
-       System.out.println(studentRef.rollNo);
-       System.out.println(studentRef.name);
-       System.out.println(studentRef.age);
-       System.out.println(studentRef.course);
+       studentRef.display();
+
+
+       Student studentRef2 = new Student();
+       
+       studentRef2.rollNo=101;
+       studentRef2.name="Suresh Kumar";
+       studentRef2.age=222;
+       studentRef2.course="Java";
+
+       studentRef2.display();
+
 
 
    }
+
+
+ /*Syntax to create a method:
+
+  accessmodifier returntype methodname(optional arguments){
+
+  	// method body
+  } 
+*/
+
+ //instance method
+ public void  display(){
+
+       System.out.println(rollNo);
+       System.out.println(name);
+       System.out.println(age);
+       System.out.println(course);
+
+
+ }
 
 
 
