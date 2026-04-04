@@ -2,9 +2,13 @@ package com.codegnan;
 
 public class Course {
 	
+	//instance variables
 	String courseName;//default null
 	double courseFee;// default 0.0
 	int courseDuration; //0
+	
+	//static vatriables 
+	static String company;
 	
 	
 	//Course(){}
@@ -29,6 +33,18 @@ public class Course {
     }
     
     public void displayCourseDetails(Course course) {
+    	
+    	System.out.println(courseName);
+    	
+    	//local variables
+    	int duration =10 ;
+    	
+    	System.out.println(duration);
+    	
+    	
+    	
+    	
+    	
     	System.out.println("CourseName: "+course.courseName);
     	System.out.println("Course Fee: "+course.courseFee);
     	System.out.println("Course Duration: "+course.courseDuration);
