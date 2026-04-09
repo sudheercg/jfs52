@@ -1,0 +1,115 @@
+Strings:
+=======
+String is a class present in java.lang package. 
+
+A String is sequence of characters. 
+
+eg: String name;
+name="Codegnan";
+name="1234567";
+name="#*";
+
+An array of characters. 
+
+datatype variable = value; 
+
+eg: 
+
+String company= "Codegnan";
+
+String company;
+company="Codegnan";
+
+
+String creation: 
+String creation using Literal.
+
+String variable = constant value enclosed in quotes
+
+If we want to use the classes present in java.lang package
+we need not import java.lang package,
+they are automatically available in all the classes. 
+
+String comparision can be done in two ways: 
+
+1. Compare the content using .equals() method
+
+- equals() method is present in java.lang.Object class
+- String uses equals() method to compare the content of two
+  String objecgts. 
+- equals() returns boolean value true or false
+  true, if both Strings have same content
+  false, if the content is different
+
+2. Comparing the reference by using == operator. 
+  == is an operator which compares the memory
+     address of two strings.
+     
+  == operator returns boolean value true or false
+  true if both the strings point to the same reference
+  false, if both Strings point to a different reference  
+     
+
+String Immutability: 
+--------------------
+
+String is a 'final' class in Java. 
+
+Strings created with String class are by default immutable. 
+Immutability means unchangeable or unmodifiable or something
+which cannot be changed. 
+
+Mutability: Something which can be changed or which can be
+modified is known as mutable. 
+
+
+Since Strings are Immutable, even if concat() method is applied
+on String, the String will not change. 
+
+Instead, the new String will be created as a result of concat()
+in the memory. 
+
+
+Garbage Collector:
+
+1.Orphaned object are the objects that no longer have any reference 
+  pointing them in a java program. 
+  
+2. Since they are not reachable, the garbage Collector (GC) identifies
+them as unused. 
+3. The Garbage collector automatically removes these objects from
+memory to free up the space. 
+
+Modifiable Strings:
+Strings can be modified by using two classes
+  -StringBuffer
+  -StringBuilder
+  
+  
+  
+  
+  
+  
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
