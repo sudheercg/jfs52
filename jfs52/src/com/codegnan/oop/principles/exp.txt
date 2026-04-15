@@ -57,18 +57,5 @@ eg: Relationship between Teacher and Student
  
  
  
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-Composition is a type of association:  
- 
+
 
