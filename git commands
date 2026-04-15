@@ -1,0 +1,11 @@
+git commands: 
+============
+
+Adding files to repo: 
+C:\jfs52>git add *
+
+Commit files to staging: 
+C:\jfs52>git commit -m "bank account task"
+
+Push the files to remote: 
+C:\jfs52>git push -u origin main

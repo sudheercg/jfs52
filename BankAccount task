@@ -1,0 +1,13 @@
+Create a Java class called BankAccount.
+Inside the class:
+Declare the following variables:
+- accountHolderName
+- accountNumber
+- balance
+
+Create a method displayAccountDetails()
+which Prints all account details
+
+Create an object of BankAccount and display 
+details of bankAccount by calling 
+displayAccountDetails() method. 

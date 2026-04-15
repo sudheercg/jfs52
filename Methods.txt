@@ -1,0 +1,121 @@
+Create a class Course
+- courseId  - numeric
+- courseName - String
+- courseDuration - numeric
+
+
+100
+Java
+100
+
+
+In the main method: 
+Create an object of Course
+Initialize the course object
+
+Create a method displayCourseDetails()
+and display the courseId, courseName , courseDuration
+
+
+Display the course details
+
+
+
+
+
+Class : Blueprint of an object
+Object: Instance of the class.
+
+To create a class:
+------------------
+
+class ClassName{
+	
+//variables
+
+//methods
+
+
+
+}
+
+
+To create an object:
+--------------------
+Syntax to create an object:
+Classname objectReference = new Classname(); 
+
+Example: 
+ //Student object. 
+ Student studentRef = new Student(); 
+
+
+To initialize Student object:
+-----------------------------
+//initializing student object - provide values to student 
+       studentRef.rollNo =100; 
+       studentRef.name="Raj Kumar";
+       studentRef.age=20;
+       studentRef.course="Java";
+
+
+Method: 
+------
+A method is a block of code which performs a specific task. 
+Methods are created inside a class. 
+
+Method creation Syntax:
+-----------------------
+accessmodifier returntype methodname(arguments){
+
+  	// method body
+  }
+
+accessmodifier: 
+The access modifer tells about the access level of the method.
+Java supports 4 different access modifiers:
+
+1. public 2, private 3.protected 4. default
+
+public - available through oout the application
+private - available only in the specified class. 
+protected - 
+default - 
+
+
+return type: the return type of the method tells about the type of the value which is returned by the method. 
+If the method does not return any anything we use a key
+
+
+methodName: methodName is the name of the method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
