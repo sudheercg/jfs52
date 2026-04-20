@@ -85,6 +85,23 @@ Step2:  Create an Exception class InvalidAgeException
 step3: create a main class, create person object  and call checkEligibility()
    
    
+ Nested try blocks: 
+ =================
+ 
+ Nested try blocks can handle different exceptions at different levels. 
+ Generally.
+ Inner try block  handles specific / ciritical operations
+ - outer try blocks handles the remaining exceptions
+ 
+ Using nested try block: 
+  - the program will continue to execute smoothly
+  - It prevents thewhole program from stopping
+  - after the inner exception is handled,  the code in the outer try block
+    can still executed. 
+    
+  - If  the inner try block cannot handle the exception, we can still
+    handle the exception in the outer block,
+    
    
    
    

@@ -1,0 +1,59 @@
+Thread Synchronization: 
+======================
+
+Synchronization is a concept which makes sure that only one 
+thread can execute the block of code at a time. 
+
+It prevents inconsistent data when multiple
+threads try to modify the shared resource. 
+
+To avoid this race condition we use a keyword  "synchronized"
+
+When a thread enters a synchronized method it acquires the lock of the
+object. 
+
+Other threads trying to execute the synchronized method on the same object
+must wait until the lock is released. 
+
+When a thread is executing synchronized method, no other thread will interrupt
+in the middle. 
+
+When the thread completes its task, it releases the lock and changes made by
+the thread will be updated in the main memory. 
+
+When the next thread acquires the lock, it reads the values from the memory. 
+
+Without synchronization, multiple threads may read a shared resource eg.variable
+at the same time, this will lead to incosistent data and this is called race 
+condition. 
+
+Producer - consumer Problem:
+============================
+
+In Producer consumer ,
+' It inovlves two types of threads.
+   - Producer Thread - generates data
+   - Consumer Thread - uses(consumes) the thread
+  Both these threads share a common resource eg. Message/Buffer
+  
+ There will be a problem when: 
+  - consumer may try to read when no data is available
+  - producer may try to write when the buffer or eg. box is full.
+  
+ Solution or Goal is to : 
+ -  Make sure that there is proper coordination between threads.  
+    - we must make sure that no reading must happen from consumer when no message
+    - no writing of the message by producer when message is still not consumed by the consumer 
+ 
+  Working Logic: 
+   Producer
+      -wait until the message is consumed by Consumer
+      - writes message only after message is consumed by consumer
+      - Notifies the consumer after writing message
+      
+   Consumer: 
+       - wait till producer produces message
+       - reads the message only when message is available
+       -  after reading it notifies the producer . 
+      
+
