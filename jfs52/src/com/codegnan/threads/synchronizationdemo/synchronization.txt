@@ -56,4 +56,28 @@ In Producer consumer ,
        - reads the message only when message is available
        -  after reading it notifies the producer . 
       
+wait(): 
+-------\
+wait() method is present in Object class. 
+- it causes the current thread to pause execution. 
+- thread enters waiting state
+- it must be called only inside synchronized method
+- it releases the lock on the object
+- waits until another thread calls notify()/notifyA;;()
+
+
+notify(): 
+- Wakes up one waiting thread. 
+- Must be called inside a synchronized method
+- does not releasse the lock immediately. 
+- the awakened thread will run only when the lock is released. 
+
+notifyAll():
+- wakes up all waiting threads
+- Must be called inside a synchronized block
+- It is used to wake up multiple waiting threads. 
+
+
+
+
 
