@@ -20,8 +20,10 @@ public class DemoPrinter {
 		p.print();
 		
 		Printer<Integer> intPrinter = new Printer<>(2345);
-		
+	    intPrinter.print();
+	    
 		Printer<Double>  doublePrinter = new Printer<>(20000.23);
+		doublePrinter.print();
 		
 	
 		

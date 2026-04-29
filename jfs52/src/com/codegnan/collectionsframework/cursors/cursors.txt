@@ -1,0 +1,44 @@
+Cursor: 
+Cursor allows us to iterate the elements of 
+a collection. 
+
+Difference between cursor and for loop is that
+
+Curosrs can traverse and modify a collection safely 
+ during the iteration. 
+For loop can traverse the collection but 
+it is not safe for modification while iterating. 
+
+3 types of cursors: 
+1. Enumeration cursor which is used for legacy classes
+    like Vector.
+2. Iterator curosr which can be used with all
+    collection classes. 
+    - Can traverse only in forward direction. 
+    - you can perform operations like remove()
+3. ListIterator: 
+    It extends Iterator but supports only
+    List classes. 
+    -  Traverses in both forward and reverse direction
+    
+
+Enumeration: 
+To get Enumeration object, use elements() method. 
+elements() method returns an Enumeration. 
+
+Methods:
+hasMoreElements() - returns a boolean value true if the objects exist in
+                    the enumeration, else returns false. 
+                    
+nextElement() - returns the next elemenet of the Enumeration.
+
+
+ 
+
+
+
+
+
+
+
+

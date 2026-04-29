@@ -1,0 +1,92 @@
+
+add() vs offer()
+---------------
+
+- Both are used to add the element in the Queue. 
+- add() throws an exception if queue is full 
+
+offer()
+- Returns false if queue is full, it will not throw exception
+
+- offer() is always preferred to add element in the queue. 
+
+
+remove() vs poll(): 
+------------------
+Both are used to remove the element at the front. 
+remove() throws exception if queue is empty. 
+poll() returns null if queue is emption
+
+It is always safe to use poll() to remove the element from the queue. 
+
+element() vs peek()
+-------------------
+element() and peek() both are used to retrieve front element without removal. 
+element() throws exception if queue is empty
+peek() returns null if queue is empty, so peek() is preferred to lookup the 
+front element. 
+
+
+PriorityQueue:
+
+
+PriorityQueue is a class that implements the Queue interface. 
+
+But elements in PriorityQueue does not follow FIFO
+Elements are ordered based on the priority of the queue. 
+
+It has methods; 
+offer() - insert
+poll() - remove highest priority
+peek() - to view highest priority element
+
+Priority: Priority is the order in which elements are removed from the queue
+In PriorityQueue, the element with highest priority comes out first, not
+the element which is inserted first. 
+
+- Java uses natural ordering for priority
+ For numbers - smallest number will get the highest priority
+ For Strings - Alphabetically smallest strings will have highest priority.
+ For custom objects - We can define our own priority by implementing comparator
+ 
+ 
+
+Deque:
+-----
+- Full form of Deque is Double ended Queue
+-It extends Queue interface
+- It allows insertion and deletion at both ends. 
+- It can function as :
+    Stack(LIFO) and Queue(FIFO)
+- Each method has two versions
+  To insert:
+  ---------- 
+  addFirst()
+  addLast()
+   both these methods throw exception if fails
+  
+  offerFirst() and offerLast() returns false if fails
+  
+  To delete: 
+  removeFirst() and removeLast() - throw exception if empty
+  pollFirst() and pollLast() - return null if empty
+  
+  Access ,etjods: 
+  getFirst() and getLast() throws exception if empty
+  peekFirst() and peekLast() return null if empty
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+

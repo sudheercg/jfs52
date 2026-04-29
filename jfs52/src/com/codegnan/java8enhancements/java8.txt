@@ -1,0 +1,146 @@
+Java 8 enhancements: 
+
+- Introduced in 2014
+
+- Java 8 introduced functional programming in Java.
+Functions can be used in: 
+Variables
+can  be passed as arguments to the method
+Method  can be  used as a return type for anothger method
+
+Important features of Java 8: 
+1. Functional interface - Default and static methods in FI
+2. Lambda expressions
+3. Stream API
+4. Optional class
+5. :: Double colon operator used for  
+    - Method references
+    - Constructor references
+    
+    
+    
+Java 8 introduced Functional interfaces
+ - An interface with Single abstract method
+ - Multiple static and default methods.
+ - Functional interface can be implemented
+    using Lambda expressions, Method references.
+    
+Java 8 -
+ introduces concrete methods in interaces - static methods and default methods
+ These static and default need not be overridden in implementation classes. 
+ 
+ default method:
+ --------------
+ - It is public by default
+ - It is created by using a keyword 'default'
+   eg:  
+   default void myDefaultMethod() {
+		System.out.println("Default Method in interface");	
+	}
+  - default methods need not be overridden in the implementation class. 
+  - We can use the default method implementation in the interface directly. 
+  
+  static Method: 
+  -------------
+  - A method which is declared using static keyword. 
+  - It can be accessed in implementation classes using Interface name. 
+    eg. MyInterface.myStaticMethod();
+    
+    eg:
+    public static void myStaticMethod() {
+		System.out.println("My static method");
+	}
+	
+	
+Lambda Expression: 
+==================
+Lambda expressions are introduced in java 8
+Lambda expressions are the implementation of Functional Interface methods. 
+Lambda expression can be used only with a Functional interface. 
+
+Syntax: 
+
+() -> Implementation; 
+
+() denotes the arguments of the function
+-> denotes a lambda expression
+implementation is the body of the method. 
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	xsszsz
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+ 

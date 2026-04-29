@@ -1,0 +1,120 @@
+Map
+===
+
+- Part  of collections framework
+- Map interface does not extend Collection Interface
+- Map is in java.util package
+- Stores object in key value pairs. 
+- Keys are unique, 
+- Values allows duplicates
+- Map allows one Null key for some implementations
+- Map allows mutliple nulls in values. 
+- 
+
+Key        Pair
+AAdharID    Person
+
+123232333   Abhilash   - Entry
+243243244   Raj        - Entry     EntrySet
+334343434   Sam        - Entry
+
+Map interface is implemented by the following classes in  java.util package : 
+
+1. HashMap:
+- HashMap stores the objects in the form of key and value pairs. 
+- Key is an object and Value is also an object.
+- Each key and value pair is known as Entry
+- Set of such entries is known as EntrySet.
+
+To get entrySet from HashMap, hashMap.entrySet() method is used. 
+
+Entry: 
+------
+Entry is an interface which represents Key and Value pair. 
+
+map.keySet() - gives the set of keys
+map.values() - gives the values in the map. 
+
+map.entrySet() - retrieves set of entries.
+
+entry.getKey() - to get the Key of a particular Entry
+entry.getValue() - to get the value of a particular entry. 
+
+HashMap allows one null key, and multiple null values. 
+Insertion order is not preserved in HashMap. 
+
+
+LinkedHashMap: 
+-------------
+Same  as HashMap but it maintains insertion order
+
+TreeMap: 
+---------
+Same as HashMap but elements are sorted automatically. 
+Strings are sorted in alphabeticcal order based on the keys.
+Integers are sorted in ascending order based on the keys. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. LinkedHashMap
+3. TreeMap
+4. HashTable
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+PanID       Employee
+RollNo      Student
+
+
+
+
+Create a HashMap of CourseName and CourseFee.
+
+Use put() method to add entries into map. 
+HashMap<String,Integer>
+Java     50000
+Python   2000
+
+use entrySet to retrieve all key and value pairs for each entry.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,6 @@
 package com.codegnan.wrapperclasses;
 
+//Generic Printer class
 public class Printer<T> {
 	
 	T t;
