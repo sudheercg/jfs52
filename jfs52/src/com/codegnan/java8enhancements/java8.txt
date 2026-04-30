@@ -67,6 +67,53 @@ Syntax:
 implementation is the body of the method. 
 
 
+ Predicate
+ ----------
+ - Predicate functional interface is present in 
+     java.util.function
+ - It has a Single abstract method which returns a boolean value:
+    boolean test(T t);
+  - test() method has a single argument and returns a boolean
+  
+  - this method is implemented to test a particular condition
+ 
+ 
+ BiPredicate: 
+ -----------
+ - It is in java.util.function
+ - Accepts 2 arguments of types T and U
+ - syntax: boolean test(T t, U u);
+ - It returns boolean result based on the given logic. 
+ 
+ 
+ Function: 
+ ========
+ - present in java.uti.function 
+ - it has a Single abstract method: 
+   R apply(T t);
+   where 
+   R can be any Return type
+   T  can be an  argument of any type. 
+ 
+ 
+ Function Chaining:
+ ==================
+ Function chaining combines multiple Functions into a sequence. 
+ - The output of one function becomes the input of the next function
+ 
+ 
+ .andThen() method: 
+ ------------------
+ - andThen() applies first function, then applies the next function on the result. 
+ Function<T,R> combinedFunction= firstFunction.andThen(secondFunction);
+ 
+ .compose() method: 
+ ------------------
+ - compose() method applies the second Function first, then applies first function
+   on the result. 
+   
+    Function<T,R> combinedFunction= firstFunction.compose(secondFunction);
+   
 
 
 
