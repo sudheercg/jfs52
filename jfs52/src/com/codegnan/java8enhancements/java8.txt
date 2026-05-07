@@ -116,6 +116,61 @@ implementation is the body of the method.
    
 
 
+Optional Class:
+==============
+
+- A Container object that may or may not contain a non-null alue
+- Introduced in java
+- Used toavoid NullPointerException
+
+
+To create an Optional:
+---------------------
+
+//When the value must bot be null
+Optional<String> opt1 = Optional.of("Hello");
+
+//some times may accept nulll
+Optional<String> opt2 =Optional.ofNullable(null);
+
+//to create an empty object
+Optional opt3 = Optional.empty(); 
+
+Important methods: 
+- isPresent() -> returns true if value exisits
+- isEmpty() - java 11
+
+- get() - returns a value, it throws exception if empty
+
+To safely access object we need to use the following the methods:
+- orElse(defaultValue);
+-  orElseGet(Supplier)
+- - orElseThrow()
+
+
+Method ReferencesL 
+- Method reference is a shorthand for lambda expression
+- Used to call an existing method of a class which has the same signature as that of the Functional
+   interface method.  
+- It only works with Functional interfaces
+- Method references use :: operator which is also called as double colon operator. 
+
+Types of method references: 
+1. static method reference: 
+
+Syntax:
+ClassName ::staticMethod
+
+Instance method reference:
+SyntaxL 
+
+objectReference::instanceMethod
+
+
+
+
+
+
 
 	
 	
