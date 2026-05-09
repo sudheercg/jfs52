@@ -1,0 +1,47 @@
+Difference between primitive and object: 
+
+-primitive stores actual value eg. int, double,char,boolean
+-primitives are stored in stack memory
+- faster access
+- no methods available
+
+Object: 
+ - Stores references of object eg. String, Arrays, wrappper classes. 
+ - stored in heap memory
+ -slightly slower than primitives
+ - has methods and properties. 
+ 
+- In CollectionsFramework and in some APIs primtives cannot be used
+  directly. 
+  
+- We use Wrapper classes to convert primitives into objects, so that
+  they can be used in Collections framework, Serialization etc.
+
+  Each primitive has corresponding wrapper class: 
+        
+        primitive    Wrapper class
+        ---------    --------------
+		byte         	Byte
+		short        Short
+		//int  - Integer
+		//long - Long
+		//float - Float
+		//double - Double
+		//boolean - Boolean
+		//char -  Character
+  
+  To manually convert a primitive into object: 
+    valueOf() metho is used. 
+  
+  To manually convert a object into primtive
+    xxxValue() method is used. eg. intValue(), floatValue() etc
+    
+    Tonvert a String to primitive: 
+    eg: to Covert a String into int
+      parseInt() method is used
+      to convert a String to double: 
+      parseDouble() method is used. 
+  
+  
+  
+  

@@ -1,0 +1,10 @@
+Multiple interface implementation:
+
+A class can implement multiple interface
+
+class ClassName implements interface1, interface2, interface3{
+
+
+//implement all abstract methods
+
+}

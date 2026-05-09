@@ -1,0 +1,39 @@
+toString():
+
+- toString() is present in java.lang.Object
+- Every class in Java inherits Object class automatically 
+   without even using extends keyword
+- When we create a class, the methods of Object class are
+  automatically inherited. 
+  
+- When a object is created for a class, if you 
+  print the object reference using SOP statement,
+  the reference of the object is printed. 
+  By default the toString() method in Object class
+  returns the object reference. 
+  
+  eg: classpackage.classname@hashcode
+  
+  - To change the behaviour of the toString() method, we need to override
+    toString() method in our class. 
+    
+ - Generally, toString() is overridden to display the state/attribute 
+   values of the object.
+   
+ Syntax:L
+ 
+     public String toString(){
+        return obj.attribute1+obj.attribute2...;
+     }
+ 
+ 
+ eg: 
+ 
+ 	 * public String toString() { 
+ 	 		return personName+" "+ passport.passportID; 
+ 	 }
+
+ 
+ 
+   
+ 

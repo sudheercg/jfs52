@@ -1,0 +1,4 @@
+Hello Codegnan100
+43.44
+true
+Course: Java, Duration: 100

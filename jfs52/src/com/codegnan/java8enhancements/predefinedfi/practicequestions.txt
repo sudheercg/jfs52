@@ -1,0 +1,73 @@
+Q1. Predicate (Basic Filtering)
+
+Create a Predicate<Integer> to check whether a number is even.
+
+Input: 10
+Output: true
+Q2. Predicate (String Condition)
+
+Write a Predicate<String> to check if a string’s length is greater than 5.
+
+Input: "Spring"
+Output: true
+Q3. Function (Transformation)
+
+Create a Function<String, Integer> to return the length of a string.
+
+Input: "Java"
+Output: 4
+Q4. Function (Data Conversion)
+
+Write a Function<Integer, String> that converts a number into a string with prefix "Value: ".
+
+Input: 25
+Output: "Value: 25"
+Q5. Consumer (Printing Data)
+
+Create a Consumer<String> that prints a message in uppercase.
+
+Input: "hello"
+Output: HELLO
+Q6. Consumer (Object Handling)
+
+Create a Consumer<Employee> to print employee name and salary.
+
+Define Employee class with fields: name, salary.
+Q7. Supplier (Value Provider)
+
+Create a Supplier<Double> that returns a fixed discount value (e.g., 10.5).
+
+Output: 10.5
+Q8. Supplier (Dynamic Value)
+
+Create a Supplier<Long> that returns the current system time using System.currentTimeMillis().
+
+Q9. BiPredicate (Two Inputs Check)
+
+Write a BiPredicate<String, String> to check if two strings are equal (ignore case).
+
+Input: ("Java", "java")
+Output: true
+Q10. BiFunction (Two Inputs Transformation)
+
+Create a BiFunction<Integer, Integer, Integer> to return the sum of two numbers.
+
+Input: (10, 20)
+Output: 30
+Q11. BiConsumer (Two Inputs Action)
+
+Create a BiConsumer<String, Integer> to print:
+Name: Ravi, Age: 30
+
+Q12. UnaryOperator (Single Input, Same Type Output)
+
+Create a UnaryOperator<Integer> to return the square of a number.
+
+Input: 5
+Output: 25
+Q13. BinaryOperator (Two Inputs, Same Type Output)
+
+Create a BinaryOperator<Integer> to return the maximum of two numbers.
+
+Input: (15, 25)
+Output: 25

@@ -1,0 +1,112 @@
+Set Interface: 
+
+Set interface extends Collection interface
+
+Set represents collection of unique elements (no duplicates allowed)
+No index based access like List.  
+
+It allows only one null elements
+
+Sets are by default unordered.  
+
+- Implementations of Set:
+     - HashSet
+     - LinkedHashSet
+     - TreeSet
+
+ HashSet: 
+ - HashSet isa class which implements Set interface. 
+ - Duplicates are not allowed. 
+ - It will not maintain insertion order. 
+ It allows one null element.
+ - HashSet internally uses hashing mechanism.
+   Hashing converts each element into a hashcode to decide
+   where to store in memory.  
+- HashSet internally uses an Array (HashMap)
+- The hashcode decides - in which array index the element must be stored. 
+ 
+ LinkedHashSet: 
+ ------------
+ LinkedHashSet implements Set interface. 
+ It will not allow duplicates.
+ LinkedHashSet is same like HashSet, but it will maintain the insertion
+  order. 
+ It can maintain insertion order because internally it uses 
+  links between the objects. 
+  
+ Since it maintains the links, more memory is required for LinkedHashSet
+ 
+ HashSet is generally faster than LinkedHashSet. 
+ 
+ Overriding hashCode() and equals() methods in HashSet. 
+ - HashSet stores unique elements only
+ - Internally it uses 2 methods
+    - hashCode() - find the bucket location(index)
+    - equals() - to check duplicate values inside the bucket.  
+    
+  If we do not override the hashCode() and equals() methods:
+    the default equals() method compares memory address
+    the default hashCode() method is also based on memory address
+    
+    so, even though the 2 custom objects(eg. student object)
+     are having the same data, they are treated as 2 different
+     student objects. 
+    That means, duplicates are allowed. 
+    
+    To overcome this problem, we will override the equals() and 
+    hashCode() methods.
+    
+    equals() - must compare object data
+    hashCode() - must generate has based on same fields. 
+   
+   Then, if a same object is inserted again, it will be treated
+   as the same object, 
+   this way, Hashset avoid duplicate custom objects. 
+   
+   Internally: 
+   1. hashCode() method finds the index/bucket
+   2. If index already has an object, 
+      equals() checks for duplicate.
+   3. If equals() method finds the duplicate, object is not
+      added. 
+      
+   Important::
+   To make sure that the objects are compared not with 
+   memory reference but with logical equality, we must override
+   hashCode() and equals() methods in the class. 
+   
+   
+ Flow of HashSet after overriding equals() and hashCode()
+ 1. add(object)
+        |
+      hashCode()
+         |
+    same bucket?
+         |Yes -> equals() 
+                    |
+                   true-> reject the object
+                   false-> insert the object
+         |
+         NO -> object is inserted directly
+         
+                  
+          
+        
+
+   
+   
+    
+    
+    
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

@@ -1,0 +1,50 @@
+Variables:
+
+Variables in java can be classified into 3 important types. 
+
+1. instance variables(non-static variables)
+    - variables declared inside a class but outside any method
+      constructor or block. 
+    - Instance variables belopng to object (instance) of class. 
+    - Each object will have a copy of instance variables
+    - stored in heap memory
+    - default values are assigned automatically
+2. static variables (class variables)
+    - variables declared with static keyword inside a class. 
+    - belong to class , not object
+    - only one copy of static variable is shared among all
+      objects
+    - stored in method area
+    - can be accessed directly in the same class,
+      in a different class its accessed with Classname 
+      It can be also accessed with object reference.
+      
+ 3. Local variables: 
+    Variable declared inside a method, constructor or a block
+    Scope is limited to that method/block/constructor
+    stored in stack memory
+    Default values are not allocated ,
+    We must initialize it before use. 
+    
+   Static Method vs instance method: 
+   ===================================
+   A method declared using static keyword. 
+   - It belongs to class
+   - No need to create object to access static method
+   - It can be called using classname.staticmethod()
+   -  can access - static variables, other static methods
+      but cannot directly access instance variables/methods. 
+   
+   Instance methods:
+    - they are also known as non-static methods
+    - instance method is created without static keyword
+    - it belongs to object
+    - it requires object creation to call
+    - it can access
+       - instance variables
+       -static variables
+       - other instance and static methods. 
+   
+   
+    
+    

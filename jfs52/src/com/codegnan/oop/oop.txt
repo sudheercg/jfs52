@@ -1,0 +1,412 @@
+OOP - Object Oriented Programming
+
+class: Template or a blueprint for an object
+       Class is a logical entity. 
+       
+object: Instance of a class.
+
+Instance variables: 
+- Instance variables are the variables which belong to each 
+  instance.
+- They are created inside a class, outside the method
+- Everytime when we create an object a seperate copy of instance
+  variables is created for object
+- instance variables are stored in heap memory
+
+Default values are assigned to instance variables: 
+byte,short, int,long - 0
+float,double = 0.0
+char- nullcharacter 
+boolean - false
+
+
+
+
+BankAccount: 
+- accountNumbet long
+- accountHolder String
+- accountType - String
+- balance - double
+
+Instantiation: Creation of an instance(object)
+Initialization: Providing the values to instance variables
+
+
+Constructor:
+Constructor is used to initialize an object. 
+Everytime when we create a class, a default constructor gets created. 
+The constructor will have the same name as the class name.
+
+Constructor can be of different types: 
+1. Default constructor: A constructor which gets created when class is created
+    - Default constructor will not have any arguments, it is also called no argument constructor. 
+    
+2. Parameterized constructor 
+
+
+
+
+
+public void displayEmployeeDetails(Employee emp){
+
+System.out.println(emp.id);
+System.out.println(emp.name);
+Polymorphism: 
+
+Polymorphism means "many forms"
+The ability of a method to take multiple forms depending on
+the situattion is called polymorphism.
+
+Same action but different behaviour. 
+
+eg:
+add() method can add 2 numbers, 3numbers etc.
+Same method name different implementations
+
+Different types of polymorphisms supported by Java: 
+1. Compile time polymorphism :
+Compile time polymorphism is a type of polymorphism where the 
+method call is resolved at compile time. 
+
+It is also called as
+Static polymorphism or
+Early Binding   or
+Static binding
+
+Static polymorphism is achieved by method overloading
+- same method name
+- different parameters
+
+It is called compile-time polymorphism because
+- the compiler decides which method to call
+- based on the
+    - number of arguments
+    - type of the arguments
+    - order of the arguments
+    
+    
+Inheritance: 
+Acquiring the properties of a parent by the child class is called inheritance;
+
+Inheritance can be done in different ways: 
+1. Single inheritance - A Single child class inheriting from Single Parent class. 
+      Class Parent
+        |
+      Class Child
+      
+      Child inheriting Parent OR Child extends Parent
+
+
+2. Multilevel inheritance: A  class is inherited from another class, which is also inherited
+from an another  class forming a chain of inheritance.This is multilevel inheritance. 
+
+    A  String name; void displayA(){}
+     |
+     B void displayB(){}   
+     |
+     C void displayC(){}
+     |
+     D  void displayD(){}
+     
+     B extends A  - dispayB(),B automatically inherits name and displayA()
+     C extends B  - displayC(),automatically inherits name, displayA(),displayB()
+     D extends C   - displayD(), automatially inherits name, displayA(), displayB(), displayC()
+
+3. Hierarchial Inheritance:
+When a class is inherited by multiple child classes, this is known as Hierarchial inheritance.
+
+4. Multiple inheritance: 
+    Multiple parents inherited by a child class.Java does not support multiple inheritance. 
+    
+    
+             
+       
+    
+    
+    
+
+
+
+
+
+Parent class      Child class
+super class       sub class
+Base classs       Derived class
+
+
+
+
+
+Create a class SalaryAccount, which  inherits BankAccount class. 
+Override the method in BankAccount class. 
+
+
+
+
+
+
+super keyword: 
+
+super keyword can be used in 2 different ways. 
+
+1. super with parenthesis or super()
+
+super() is used to call the super class constructor
+super() when used in child class must be the first statemenet
+of your constructor. 
+
+By default, every constructor of a class has implicit
+super() call. 
+
+2. super without parenthesis - super
+- super keyword without parenthesis is used to access 
+  super class method or variables. 
+  
+
+
+Encapsulation: 
+- Binding of methods and variables in a single entity called class is known as encapsulation. 
+
+- The variables in an encapsulated class must be made secure with private keyword. 
+
+- By making them private, direct access to the variables is restricted from external classes. 
+
+- To provide restricted  access to the private variables,  public getters and setters are 
+  to be created for the private variables. 
+-  The public getter methods and setter methods are also known as 
+   accessors and mutators,
+   
+- Encapsulation allows us to validate the data provided in the setter method. 
+
+ 
+final keyword: 
+
+final keyhword in java can be used with
+1. class:
+final keyword when applied to a class, it
+cannot be inherited by other classes. 
+
+Syntax:
+
+public final class className {}
+
+2. variable:
+
+When 'final' keyword is applied to a variable, the value of the variable cannot be reset or reassigned. 
+eg: 
+private final double interestRate =5.5;
+
+
+3. method
+
+When final keyword is applied in the method declaration, the method cannot be overridden in the child classes.
+eg: 
+public final double getBalance() {
+		return balance; 
+		
+}
+
+
+Abstraction:
+
+Hiding the implementation details and exposing only the relevant details is known as abstraction. 
+
+
+Concrete method:
+----------------
+A method with body/implementation is known as concrete method
+
+eg: 
+	public void x(){
+		//statements
+	}
+
+abstract method: 
+----------------
+A method which does not provide body/implementation is known as abstract method. 
+An abstract method is terminated with a semicolon;
+
+eg: public void myAbstractMethod(); 
+
+
+Abstraction can be achieved in java by using: 
+
+1. Abstract class:
+
+An abstract class is a class in which you can have both concrete 
+methods and abstract methods.
+
+- An abstract class must always be extended by other classes.
+- When a class extends an abstract class, all the abstract methods of the 
+  abstract class must be implemented/overridden.
+- Abstract classes cannot be instantiated, meaning, we cannot create an 
+  object of an abstract class, we can only create an object for a child class
+  which inherits abstract class.   
+- An abstract class can have constructors. 
+- Variables can also be declared in the abstract class. 
+
+Syntax:
+
+ abstract class className{}
+ 
+ - To create an abstract class we need to use the keyword 'abstract class'
+  before the classname.
+  
+- The abstract methods in the abstract class must also use the keyword
+  'abstract' in the method declaration. 
+  
+- It is not mandatory in the child class 
+  to override concrete methods in the abstract class. 
+
+-
+
+
+2. Interface
+
+
+
+
+
+
+1. Create an abstract class BankAccount.
+
+🔹 Requirements:
+Variables:
+- accountNumber
+- balance
+
+Methods:
+deposit(double amount) → common/concrete method
+
+Abstract method:
+
+abstract void withdraw(double amount);
+
+Step 2: 🔹 Create subclasses:
+---------------------------
+SavingsAccount extends BankAcount
+  -Minimum balance rule (e.g., 1000)
+
+CurrentAccount extends BankAccount
+
+Allow overdraft (e.g., -5000)
+🔹 Task:
+Implement withdraw() based on rules
+Test in main class
+
+
+Interfaces: 
+===========
+In Java abstraction can be achieved by using interface.
+
+Interface tells us what to do, but it  will not tell how to do. 
+It defines  a contract(what to do)
+
+By default abstract methods are allowed in interfaces.
+But from Java 8+ onwards concrete methods like 'default' and 'static' methods are allowed
+
+Interface can have variables. 
+Variables declared in interface are implicitly public,  static and final. 
+
+Methods in the interface by default public
+
+To implement an interface in the class we use the keyword "implements"
+
+
+Interfaces are generally called as 100% abstraction.
+
+ 
+Write a program in which an application can send notifications/messages
+through different ways. 
+step1: 
+create an interface - NotificationService
+
+methods in interface:
+void sendMessage(String message)
+void sendAlert(String message);
+
+ste2: Implementing classes
+1. EmailNotification implements NotificationService
+- sendMessage() will send "Email message"
+- sendAlert() will send "Email Alert message"
+
+2. SMSNotification  implements NotificationService
+     sendMessage → "SMS sent: message"
+      sendAlert → "SMS ALERT: message"                
+
+step3: Main class - Name the class as NotificationApp
+- Create objects for all notification types
+- Call both methods
+- Use interface reference:
+
+
+
+
+
+Access Modifiers: 
+
+
+         Same class   Other class in Same Package    Different Package
+         ----------   ---------------------------    -----------------
+public      Y              Y                            Y
+private     Y              N                            N
+Default     Y              Y                            N
+Protected   Y              Y                            Y (when the class is the subclass)
+
+
+
+
+private<default<protected<public
+
+Access modifiers are keywords used to control the visibility of classes, variables and methods. 
+Types of Access Modifiers: 
+
+public: 
+Accessible from anywhere within and outside the package
+
+protected: 
+Accessible within the same package and also in the subclasses in different packages
+
+default(no modifier):
+Accessible only within the same package, it is also known as package-private modifier/
+
+private: 
+access only within the same class. 
+
+Access Modifiers rules in Method overriding:
+--------------------------------------------
+
+Whena  child class overrides a parent class method, access modifiers follow strict rules: 
+
+1. We cannot reduce the visibility of parent method when overridden in child class. 
+   But we can increase the visibility.
+
+If the parent method is public
+overridden method in child must also be public
+
+If parent method is protected
+overridden method in chidl can be protected and public
+
+If parent method is default
+
+
+Covariant return types: 
+- Java allows method overriding with a more specific return type(subclass)
+- Introduced in java 5
+- It works only in inheritance
+- Return type in child must be same or subclass of parent return type
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

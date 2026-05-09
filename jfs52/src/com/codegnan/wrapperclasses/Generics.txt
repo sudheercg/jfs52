@@ -1,0 +1,24 @@
+Generics:
+
+Generics will allow the classes, interfaces and methods to work
+with different data types, while providing compile time type sagety.
+
+Typesafety:
+Typesafety means errors caused by using the wrong data type are detected
+at compile time. This prevents ClassCastException at runtime. 
+
+
+Generics works with reference types. 
+Eg:
+ Printer<int> // Wrong
+ Printer<Integer> //Correct
+ 
+ The type parameter names: 
+ T - type
+ E-  Element
+ K- Key
+ V - value
+ N- Number
+ 
+
+

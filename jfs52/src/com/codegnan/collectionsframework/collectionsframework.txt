@@ -1,0 +1,18 @@
+Collections Framework: 
+
+Collections are group of objects.
+
+Collections framework is an architeccture
+for representing and manipulating Collections.
+
+Collections framework contains the following: 
+1. Interfaces
+2. Implementations
+3. Algorithms for searching , sorting etc. 
+
+
+
+
+
+
+ 

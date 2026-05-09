@@ -1,0 +1,155 @@
+iostreams:
+==========
+Stream: 
+------
+Sequence of data that flows between a source and destination. 
+
+Input Stream: 
+-------------
+- Used to read the data
+eg: reading from keyboard or file  or network
+
+Output Stream:
+-------------- 
+- Used to write data 
+- Eg: writing to a file, console. 
+
+try with resources
+=================
+
+try with resources allows you to declare resources like files,streams, database connections
+inside the try statement, so that they are automatically closed after use. 
+
+- It eliminates the use of finally block to close the resources
+- It prevents the resource leaks
+- try with resources works with any object that implements AutoCloseable interface.
+
+Syntax:
+
+try(FileWriter  writer = new FileWriter("writer.txt")){
+
+}catch(Exception e){
+e.printStackTrace();
+
+}
+
+AutoCloseable interface: 
+------------------------
+AutoCloseable interface enables automatic resource management.
+- It is in java.lang
+- contains a single method close()
+
+Any class that implements AutoCloseable can be  used in try-with-resources
+
+eg: FileReader,FileWriter,BufferedReader, BufferedWriter, Connection etc.
+-When you use try-with-resources,JVM will automatically call close()
+- Even if exception occurs, resources are still  safely closed.
+
+
+
+
+
+
+
+
+
+
+
+
+There are two types of IOStreams: 
+--------------------------------
+1. Character Stream: 
+Character stream classes help us 
+ - read the character data from a file(InputStream)
+ - write the character data to a file - OutputStream
+ - Chracter streams reads and writes  the data byte by byte
+ 
+ Some important character stream classes: 
+  - File class
+    - it is present in java.io package
+    - It is used to create a file object and also to create
+       a physical file and a physical directory(folder)
+    
+      
+ 
+ 1. FileWriter class:
+ -------------------
+ - FileWriter class allows us  to write the  data to a file
+ - It extends an abstract class Writer.
+ - FileWriter object can be created with different constructors
+ 
+ Constructors:
+ ------------
+ FileWriter(String filename);
+  FileWriter(File f);
+ FileWriter(String filename, boolean append)
+
+ FileWriter(File file,boolean append)
+ 
+ 
+ 
+ 
+ 2. FileReader
+ 
+ 
+ 
+ 
+ 
+ 
+ 3. BufferedReader
+ 
+ 4. BufferedWriter
+ 
+ 
+ - BufferedReader and BufferedWriter classes adds a buffer(temporary memoory)
+ - This memory is used to speed up reading and writing. 
+ - Buffer: IT is a temporary memory area used to store data while 
+            reading or writing. 
+            
+- All the characters are first read/written in a buffer and then all character
+  are read/written from  the bufferr to a file at a time instead of 
+  one character at a time. 
+  
+  read/write operations happens in chunks instead of repeatedly
+  accessing the file. 
+ 
+ 
+ 5. PrintWriter
+ 
+ 
+ PrintWriter:
+ -----------
+ 
+ PrintWriter is a class in java.io
+ It is used to write formatted text data to 
+   - files
+   - consoles
+   -Network systems. 
+   
+ - It provides methods like: 
+    -print(), println(), printf():
+ 
+ 
+2. Byte Stream:
+
+The Byte stream classes used for Serialization: 
+
+Serialization:
+===============
+FileOutputStream
+BufferedOutputStream
+ObjectOutputStream
+
+DeSerialization: 
+==============
+FileInputStream
+BufferedInputStream
+ObjectInputStream
+
+
+
+
+
+
+
+

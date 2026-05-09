@@ -1,0 +1,248 @@
+Java 8 enhancements: 
+
+- Introduced in 2014
+
+- Java 8 introduced functional programming in Java.
+Functions can be used in: 
+Variables
+can  be passed as arguments to the method
+Method  can be  used as a return type for anothger method
+
+Important features of Java 8: 
+1. Functional interface - Default and static methods in FI
+2. Lambda expressions
+3. Stream API
+4. Optional class
+5. :: Double colon operator used for  
+    - Method references
+    - Constructor references
+    
+    
+    
+Java 8 introduced Functional interfaces
+ - An interface with Single abstract method
+ - Multiple static and default methods.
+ - Functional interface can be implemented
+    using Lambda expressions, Method references.
+    
+Java 8 -
+ introduces concrete methods in interaces - static methods and default methods
+ These static and default need not be overridden in implementation classes. 
+ 
+ default method:
+ --------------
+ - It is public by default
+ - It is created by using a keyword 'default'
+   eg:  
+   default void myDefaultMethod() {
+		System.out.println("Default Method in interface");	
+	}
+  - default methods need not be overridden in the implementation class. 
+  - We can use the default method implementation in the interface directly. 
+  
+  static Method: 
+  -------------
+  - A method which is declared using static keyword. 
+  - It can be accessed in implementation classes using Interface name. 
+    eg. MyInterface.myStaticMethod();
+    
+    eg:
+    public static void myStaticMethod() {
+		System.out.println("My static method");
+	}
+	
+	
+Lambda Expression: 
+==================
+Lambda expressions are introduced in java 8
+Lambda expressions are the implementation of Functional Interface methods. 
+Lambda expression can be used only with a Functional interface. 
+
+Syntax: 
+
+() -> Implementation; 
+
+() denotes the arguments of the function
+-> denotes a lambda expression
+implementation is the body of the method. 
+
+
+ Predicate
+ ----------
+ - Predicate functional interface is present in 
+     java.util.function
+ - It has a Single abstract method which returns a boolean value:
+    boolean test(T t);
+  - test() method has a single argument and returns a boolean
+  
+  - this method is implemented to test a particular condition
+ 
+ 
+ BiPredicate: 
+ -----------
+ - It is in java.util.function
+ - Accepts 2 arguments of types T and U
+ - syntax: boolean test(T t, U u);
+ - It returns boolean result based on the given logic. 
+ 
+ 
+ Function: 
+ ========
+ - present in java.uti.function 
+ - it has a Single abstract method: 
+   R apply(T t);
+   where 
+   R can be any Return type
+   T  can be an  argument of any type. 
+ 
+ 
+ Function Chaining:
+ ==================
+ Function chaining combines multiple Functions into a sequence. 
+ - The output of one function becomes the input of the next function
+ 
+ 
+ .andThen() method: 
+ ------------------
+ - andThen() applies first function, then applies the next function on the result. 
+ Function<T,R> combinedFunction= firstFunction.andThen(secondFunction);
+ 
+ .compose() method: 
+ ------------------
+ - compose() method applies the second Function first, then applies first function
+   on the result. 
+   
+    Function<T,R> combinedFunction= firstFunction.compose(secondFunction);
+   
+
+
+Optional Class:
+==============
+
+- A Container object that may or may not contain a non-null alue
+- Introduced in java
+- Used toavoid NullPointerException
+
+
+To create an Optional:
+---------------------
+
+//When the value must bot be null
+Optional<String> opt1 = Optional.of("Hello");
+
+//some times may accept nulll
+Optional<String> opt2 =Optional.ofNullable(null);
+
+//to create an empty object
+Optional opt3 = Optional.empty(); 
+
+Important methods: 
+- isPresent() -> returns true if value exisits
+- isEmpty() - java 11
+
+- get() - returns a value, it throws exception if empty
+
+To safely access object we need to use the following the methods:
+- orElse(defaultValue);
+-  orElseGet(Supplier)
+- - orElseThrow()
+
+
+Method ReferencesL 
+- Method reference is a shorthand for lambda expression
+- Used to call an existing method of a class which has the same signature as that of the Functional
+   interface method.  
+- It only works with Functional interfaces
+- Method references use :: operator which is also called as double colon operator. 
+
+Types of method references: 
+1. static method reference: 
+
+Syntax:
+ClassName ::staticMethod
+
+Instance method reference:
+SyntaxL 
+
+objectReference::instanceMethod
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	xsszsz
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+ 
